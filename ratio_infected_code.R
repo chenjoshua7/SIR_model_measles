@@ -24,3 +24,6 @@ ggplot(data = ratios) +
   geom_hline(yintercept = 1, size = 1) +
   ggtitle("Ratio of Infected Over 300 Weeks") + 
   theme(plot.title = element_text(hjust = 0.5))
+
+#Export CSV
+write.csv(ratios, "infected_ratios.csv", row.names = FALSE)
