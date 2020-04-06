@@ -1,5 +1,6 @@
 #Joshua Chen 
 
+#Creating the Dataframe
 #create a 301 by 3 table with initial values.
 data <- data.frame(Week = 0:300, Infected = 20, Susceptibles = 30000)
 
@@ -18,6 +19,3 @@ for(i in 2:301) {
 
 #Export to CSV
 write.csv(data,"GPS5_measles_model.csv", row.names = FALSE)
-
-
-
