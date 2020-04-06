@@ -1,0 +1,18 @@
+---
+title: "GPS Question 1c"
+author: "Joshua Chen"
+date: "4/6/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+The constructed table I have made for this model:
+
+Here are the graphs for the Susceptible Population and Infected Population over time.
+
+!(/Graphs/susceptible_graph.png)
