@@ -59,6 +59,7 @@ for(i in loc_max) {
     maxs <- c(maxs,data[i,3])
 }
 maxs <- unlist(maxs, use.names = FALSE)
+maxs <- rbind(loc_max,maxs)
 
 #return all local maximums
 maxs
