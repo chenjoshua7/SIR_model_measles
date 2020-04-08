@@ -48,3 +48,17 @@ colnames(master_data) <- c("Week","Births","Susceptibles","Infected","Change in 
 
 #Overdata
 write.csv(data,"GPS5_Problem2_data.csv", row.names = FALSE)
+
+#Find local maxs
+data <- read_csv("~/SIR_model_measles/Problem 2/GPS5_Problem2_data.csv")
+loc_max <- which(diff(sign(diff(data$Susceptibles)))==-2)
+loc_max <- c(loc_max, 101)
+maxs <- numeric(0)
+
+for(i in loc_max) {
+    maxs <- c(maxs,data[i,3])
+}
+maxs <- unlist(maxs, use.names = FALSE)
+
+#return all local maximums
+maxs

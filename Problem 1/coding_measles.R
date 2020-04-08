@@ -19,3 +19,7 @@ for(i in 2:301) {
 
 #Export to CSV
 write.csv(data,"GPS5_measles_model.csv", row.names = FALSE)
+
+#Find maximum (heigh of peaks)
+max(data$Infected)
+#Returns 607.8304
